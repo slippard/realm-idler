@@ -1,0 +1,76 @@
+/* ****** */
+/* Global */
+/* ****** */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    overflow: hidden;
+}
+
+/* Variables */
+
+:root {
+    --bg: #333;
+    --main-txt: #eee;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.test {
+    background: rgb(80, 80, 80);
+}
+
+/* LOGIN */
+
+.login {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+    width: 100%;
+    color: var(--main-txt);
+    transition: ease-in-out 0.5s all;
+}
+
+.form {
+    grid-column: 2/4;
+    position: relative;
+    margin: auto 0;
+    text-align: center;
+}
+
+.form__label {
+    line-height: 60px;
+}
+
+.form__input {
+    width: 150px;
+    height: 22px;
+}
+
+.form__btn {
+    margin: 1em;
+    padding: .5em;
+    border: none;
+}
+
+/* APP */
+
+.app {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    color: var(--main-txt);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}

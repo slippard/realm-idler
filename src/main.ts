@@ -1,12 +1,10 @@
 import { app, BrowserWindow } from "electron";
-import { Game } from './game';
 import * as path from "path";
 
 class Main {
   public mainWindow: Electron.BrowserWindow;
   constructor() {
     this.createWindow();
-    new Game();
   }
 
   private createWindow(){

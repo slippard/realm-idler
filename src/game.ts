@@ -2,21 +2,44 @@ import { Turn } from './turn';
 
 export class Game {
     private player: any;
-    constructor() {
-        console.log('Game starting...');
-        this.player = {
-            name: "koubi",
-            hp: 100,
-            atk: 10,
-            def: 5,
-            spd: 10
-        }
-        console.log('Player created: ' + this.player.name);
-        this.session(this.player);
+    constructor(name: string) {
+        this.defaultCharacter(name).then(() => this.newSession(this.player));
     }
 
-    private session(player: any) {
-        console.log('recieved: ' + player.name);
+    private newSession(player: any) {
         new Turn(player);
     }
+
+    private async defaultCharacter(name: string) {
+        return this.player = {
+            name: name,
+            fame: 0,
+            xp: 0,
+            stats: {
+                hp: 100,
+                atk: 12,
+                def: 0,
+                spd: 10,
+                dex: 15,
+                vit: 12,
+                wis: 12
+            },
+            equip: {
+                weapon: {
+                    name: '',
+                    tier: 0,
+                    shots: 2,
+                    mindmg: 10,
+                    maxdmg: 25
+                },
+                armor: {
+                    name: 'Robe of the Neophyte'
+                },
+                ring: {
+                    name: 'Ring of Minor Defense'
+                }
+            }
+        }
+    }
+
 }
