@@ -74,3 +74,260 @@ body {
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
 }
+
+.app__img {
+    position: relative;
+    margin: 10px 25px;
+    height: 40px;
+    width: 40px;
+}
+
+.player-name {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    font-size: 22px;
+    color: #eee;
+}
+
+/* XP BAR */
+
+.xpbar {
+    position: relative;
+    margin: 10px auto;
+    height: 20px;
+    width: 300px;
+    background: #777;
+}
+
+.xpbar::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 300px;
+    background: green;
+}
+
+.xpbar__title {
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0px 5px;
+    color: var(--main-txt);
+}
+
+.xpbar__level {
+    position: absolute;
+    line-height: 20px;
+    top: 0px;
+    left: 40px;
+    font-size: 18px;
+    margin: 0 auto;
+    color: var(--main-txt);
+}
+
+.xpbar__value {
+    position: absolute;
+    line-height: 20px;
+    top: 0px;
+    left: 115px;
+    font-size: 18px;
+    margin: 0 auto;
+    color: var(--main-txt);
+}
+
+/* FAME BAR */
+
+.famebar {
+    position: absolute;
+    top: 64px;
+    left: 25px;
+    margin: 10px auto;
+    height: 20px;
+    width: 300px;
+    background: #777;
+}
+
+.famebar::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 300px;
+    background: #DE5000;
+}
+
+.famebar__title {
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0px 5px;
+    color: var(--main-txt);
+}
+
+.famebar__value {
+    position: absolute;
+    line-height: 20px;
+    top: 0px;
+    left: 115px;
+    font-size: 18px;
+    margin: 0 auto;
+    color: var(--main-txt);
+}
+
+/* STATS */
+
+.stats {
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    margin: 20px auto;
+    height: 150px;
+    width: 300px;
+    background: #222;
+}
+
+.stats__left {
+    position: relative;
+    top: 30px;
+    left: 40px;
+    list-style: none;
+}
+
+.atk {
+    position: relative;
+    height: 20px;
+    width: 70px;
+    list-style: none;
+}
+
+.atk__title {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+}
+
+.atk__value {
+    position: absolute;
+    font-weight: 700;
+    top: 0px;
+    left: 35px;
+}
+
+.spd {
+    position: relative;
+    top: 10px;
+    height: 20px;
+    width: 70px;
+    list-style: none;
+}
+
+.spd__title {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+}
+
+.spd__value {
+    position: absolute;
+    font-weight: 700;
+    top: 0px;
+    left: 35px;
+}
+
+.vit {
+    position: relative;
+    top: 20px;
+    height: 20px;
+    width: 70px;
+    list-style: none;
+}
+
+.vit__title {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+}
+
+.vit__value {
+    position: absolute;
+    font-weight: 700;
+    top: 0px;
+    left: 35px;
+}
+
+/*  right */
+
+.stats__right {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    list-style: none;
+}
+
+.def {
+    position: relative;
+    height: 20px;
+    width: 70px;
+    list-style: none;
+}
+
+.def__title {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+}
+
+.def__value {
+    position: absolute;
+    font-weight: 700;
+    top: 0px;
+    left: 35px;
+}
+
+.dex {
+    position: relative;
+    top: 10px;
+    height: 20px;
+    width: 70px;
+    list-style: none;
+}
+
+.dex__title {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+}
+
+.dex__value {
+    position: absolute;
+    font-weight: 700;
+    top: 0px;
+    left: 35px;
+}
+
+.wis {
+    position: relative;
+    top: 20px;
+    height: 20px;
+    width: 70px;
+    list-style: none;
+}
+
+.wis__title {
+    position: absolute;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+}
+
+.wis__value {
+    position: absolute;
+    font-weight: 700;
+    top: 0px;
+    left: 35px;
+}

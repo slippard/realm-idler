@@ -15,6 +15,7 @@ export class Game {
             name: name,
             fame: 0,
             xp: 0,
+            level: 1,
             stats: {
                 hp: 100,
                 atk: 12,

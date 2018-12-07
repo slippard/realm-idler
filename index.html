@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./src/styles/main.css">
-    <title>Realm Idler</title>
-  </head>
-  <body>
-    <div class="login">
-      <form class="form test">
-        <label class="form__label" for="username">Character Name:</label>
-        <input class="form__input" type="text" placeholder="Rissr..." name="username" id="username">
-        <button class="form__btn">Start</button>
-      </form>
-    </div>
-    <div class="app">
-      <h2>App</h2>
-    </div>
-  </body>
 
-  <script>
-    require('./dist/renderer.js')
-  </script>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <title>Realm Idler</title>
+</head>
+
+<body>
+  <div class="login">
+    <form class="form test">
+      <label class="form__label" for="username">Character Name:</label>
+      <input class="form__input" type="text" placeholder="Rissr..." name="username" id="username" autofocus>
+      <button class="form__btn">Start</button>
+    </form>
+  </div>
+
+  <div class="app">
+
+    <img src="./src/media/wizard.png" alt="wizard" class="app__img">
+
+    <h2 class="player-name">Loading...</h2>
+
+    <div class="xpbar">
+      <h2 class="xpbar__title">Lvl</h2>
+      <p class="xpbar__level">1</p>
+      <p class="xpbar__value">0</p>
+    </div>
+
+    <div class="famebar hidden">
+      <h2 class="famebar__title">Fame</h2>
+      <p class="famebar__value">0</p>
+    </div>
+
+    <div class="stats">
+
+      <ul class="stats__left">
+        <ul class="atk">
+          <li class="atk__title">ATK</li>
+          <li class="atk__value"></li>
+        </ul>
+        <ul class="spd">
+          <li class="spd__title">SPD</li>
+          <li class="spd__value">0</li>
+        </ul>
+        <ul class="vit">
+          <li class="vit__title">VIT</li>
+          <li class="vit__value">0</li>
+        </ul>
+      </ul>
+
+      <ul class="stats__right">
+        <ul class="def">
+          <li class="def__title">DEF</li>
+          <li class="def__value">0</li>
+        </ul>
+        <ul class="dex">
+          <li class="dex__title">DEX</li>
+          <li class="dex__value">0</li>
+        </ul>
+        <ul class="wis">
+          <li class="wis__title">WIS</li>
+          <li class="wis__value">0</li>
+        </ul>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+
+<script>
+  require('./dist/renderer.js')
+</script>
+
 </html>
