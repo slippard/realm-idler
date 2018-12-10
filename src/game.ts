@@ -295,7 +295,7 @@ export class Game {
 
                 /* ROLL FOR MOVE */
 
-                var outcome = roll.roll('1d200').result;
+                var outcome = roll.roll('1d250').result;
                 //console.log(`outcome: ${outcome}`);
                 if (outcome <= pace) {
                     // Pick Enemy
