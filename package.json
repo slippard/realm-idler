@@ -1,8 +1,9 @@
 {
   "name": "realmidler",
   "version": "1.0.0",
-  "description": "An rotmg app written with Typescript",
+  "description": "A rotmg app written with Typescript",
   "scripts": {
+    "test": "mocha",
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
@@ -16,6 +17,8 @@
   "author": "Koubi",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@types/mongodb": "^3.1.15",
+    "@types/mongoose": "^5.3.4",
     "electron": "^2.0.2",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
@@ -23,6 +26,8 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "moment": "^2.22.2",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.15",
     "roll": "^1.2.0"
   }
 }

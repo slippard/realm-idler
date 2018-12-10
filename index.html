@@ -22,10 +22,14 @@
 
     <h2 class="player-name">Loading...</h2>
 
+    <div class="gold">0</div>
+
     <div class="xpbar">
       <h2 class="xpbar__title">Lvl</h2>
       <p class="xpbar__level">1</p>
       <p class="xpbar__value">0</p>
+      <span class="divider"></span>
+      <p class="xpbar__maxvalue"></p>
     </div>
 
     <div class="famebar hidden">
@@ -38,15 +42,24 @@
       <ul class="stats__left">
         <ul class="atk">
           <li class="atk__title">ATK</li>
-          <li class="atk__value"></li>
+          <li class="atk__value">0</li>
+          <a class="atk__upgrade tooltip">
+              <span class="tooltiptext">+1 ATK | 300g</span>
+          </a>
         </ul>
         <ul class="spd">
           <li class="spd__title">SPD</li>
           <li class="spd__value">0</li>
+          <a class="spd__upgrade tooltip">
+              <span class="tooltiptext">+1 spd | 150g</span>
+          </a>
         </ul>
         <ul class="vit">
           <li class="vit__title">VIT</li>
           <li class="vit__value">0</li>
+          <a class="vit__upgrade tooltip">
+              <span class="tooltiptext">+1 spd | 150g</span>
+          </a>
         </ul>
       </ul>
 
@@ -54,15 +67,30 @@
         <ul class="def">
           <li class="def__title">DEF</li>
           <li class="def__value">0</li>
+          <a class="def__upgrade tooltip">
+              <span class="tooltiptext">+1 def | 300g</span>
+          </a>
         </ul>
         <ul class="dex">
           <li class="dex__title">DEX</li>
           <li class="dex__value">0</li>
+          <a class="dex__upgrade tooltip">
+              <span class="tooltiptext">+1 dex | 150g</span>
+          </a>
         </ul>
         <ul class="wis">
           <li class="wis__title">WIS</li>
           <li class="wis__value">0</li>
+          <a class="wis__upgrade tooltip">
+              <span class="tooltiptext">+1 wis | 150g</span>
+          </a>
         </ul>
+      </ul>
+    </div>
+
+    <div class="events">
+      <ul class="event__list">
+        <li class="event__list__item">...</li>
       </ul>
     </div>
 
