@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from "path";
 import * as mongoose from 'mongoose';
 import DPlayer, { IPlayer } from './schemas/player';
+import { url } from "inspector";
 
 mongoose.connect('mongodb://client:Mudkip000@ds133814.mlab.com:33814/realm-idler', { useNewUrlParser: true });
 
@@ -53,12 +54,13 @@ class Main {
       height: 400,
       width: 350,
       resizable: false,
+      icon: './src/media/wizard.png',
       autoHideMenuBar: true
     });
 
     this.mainWindow.loadFile(path.join(__dirname, "../index.html"));
 
-    this.mainWindow.webContents.openDevTools();
+    // this.mainWindow.webContents.openDevTools();
 
     this.mainWindow.on("closed", () => {
       this.mainWindow = null;

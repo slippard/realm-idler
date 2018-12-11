@@ -1,0 +1,72 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add electron-builder --dev
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  11.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/app-builder-bin/-/app-builder-bin-2.6.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/share/yarn/lib/cli.js:129645:19)
+      at Object.onceWrapper (events.js:273:13)
+      at ClientRequest.emit (events.js:182:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:668:40)
+      at Object.onceWrapper (events.js:273:13)
+      at TLSSocket.emit (events.js:182:13)
+      at TLSSocket.Socket._onTimeout (net.js:452:8)
+      at listOnTimeout (timers.js:324:15)
+      at processTimers (timers.js:268:5)
+
+npm manifest: 
+  {
+    "name": "realmidler",
+    "version": "1.0.0",
+    "description": "A rotmg app written with Typescript",
+    "scripts": {
+      "test": "mocha",
+      "build": "tsc",
+      "watch": "tsc -w",
+      "lint": "tslint -c tslint.json -p tsconfig.json",
+      "start": "npm run build && electron ./dist/main.js",
+      "package-win": "tsc && electron-packager . RealmIdler --platform win32 --arch x64 --out releases/",
+      "package-host": "tsc && electron-packager ."
+    
+    },
+    "repository": "https://github.com/slippard/realm-idler",
+    "keywords": [
+      "Electron",
+      "rotmg"
+    ],
+    "author": "Koubi",
+    "license": "CC0-1.0",
+    "devDependencies": {
+      "@types/mongodb": "^3.1.15",
+      "@types/mongoose": "^5.3.4",
+      "electron": "^2.0.2",
+      "electron-packager": "^13.0.0",
+      "tslint": "^5.10.0",
+      "typescript": "^2.8.3"
+    },
+    "dependencies": {
+      "electron-installer-windows": "^1.1.0",
+      "lodash": "^4.17.11",
+      "moment": "^2.22.2",
+      "mongodb": "^3.1.10",
+      "mongoose": "^5.3.15",
+      "roll": "^1.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

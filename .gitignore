@@ -1,3 +1,4 @@
 /node_modules/
 /dist/
-/releases/
+/releases/app-linux-x64/
+/releases/installers

@@ -1,0 +1,38 @@
+{
+  "name": "realmidler",
+  "version": "1.0.0",
+  "description": "A rotmg app written with Typescript",
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js",
+    "package-win": "tsc && electron-packager . RealmIdler --platform win32 --arch x64 --out releases/",
+    "package-host": "tsc && electron-packager ."
+  
+  },
+  "repository": "https://github.com/slippard/realm-idler",
+  "keywords": [
+    "Electron",
+    "rotmg"
+  ],
+  "author": "Koubi",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/mongodb": "^3.1.15",
+    "@types/mongoose": "^5.3.4",
+    "electron": "^2.0.2",
+    "electron-packager": "^13.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "electron-installer-windows": "^1.1.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.15",
+    "roll": "^1.2.0"
+  }
+}
