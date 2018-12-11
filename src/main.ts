@@ -14,9 +14,8 @@ class Main {
     ipcMain.on('starting-game', (event: any, arg: string) => {
       this.createChar(event, arg);
     })
-
     this.createWindow();
-
+    
   }
 
   private createChar(event: any, name: string) {
@@ -60,7 +59,7 @@ class Main {
 
     this.mainWindow.loadFile(path.join(__dirname, "../index.html"));
 
-    // this.mainWindow.webContents.openDevTools();
+    this.mainWindow.webContents.openDevTools();
 
     this.mainWindow.on("closed", () => {
       this.mainWindow = null;

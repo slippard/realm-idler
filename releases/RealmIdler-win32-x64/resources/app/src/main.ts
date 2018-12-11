@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from "path";
 import * as mongoose from 'mongoose';
 import DPlayer, { IPlayer } from './schemas/player';
+import { url } from "inspector";
 
 mongoose.connect('mongodb://client:Mudkip000@ds133814.mlab.com:33814/realm-idler', { useNewUrlParser: true });
 
@@ -13,9 +14,8 @@ class Main {
     ipcMain.on('starting-game', (event: any, arg: string) => {
       this.createChar(event, arg);
     })
-
     this.createWindow();
-
+    
   }
 
   private createChar(event: any, name: string) {
@@ -53,6 +53,7 @@ class Main {
       height: 400,
       width: 350,
       resizable: false,
+      icon: './src/media/wizard.png',
       autoHideMenuBar: true
     });
 

@@ -28,15 +28,16 @@ gulp.task('ts', function () {
         .js.pipe(gulp.dest('dist'));
 });
 
+gulp.task('copy-files', function () {
+    return gulp.src('src/**/*')
+        .pipe(gulp.dest('dist'));
+});
+
 gulp.task('win', function() {
     return gulp.src('./dist/main.js')
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('copy-files', function () {
-    return gulp.src('src/**/*')
-        .pipe(gulp.dest('dist'));
-});
 
 gulp.task('watch', function (callback) {
     return watch('src/**/*.ts', function () {
@@ -49,6 +50,6 @@ gulp.task('watch', function (callback) {
     });
 });
 
-gulp.task('main', gulp.series('clean', 'ts', 'copy-files', 'win', function (done) {
+gulp.task('main', gulp.series('clean', 'ts', 'copy-files', function (done) {
     done();
 }));
