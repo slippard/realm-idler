@@ -59,7 +59,7 @@ class Main {
 
     this.mainWindow.loadFile(path.join(__dirname, "../index.html"));
 
-    this.mainWindow.webContents.openDevTools();
+    // this.mainWindow.webContents.openDevTools();
 
     this.mainWindow.on("closed", () => {
       this.mainWindow = null;

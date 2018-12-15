@@ -2,10 +2,6 @@
 
 Realm Idler is a simple electron game based on [Realm of the Mad God](http://realmofthemadgod.com).
 
-### Prerequisites
-* ##### [Node JS](https://nodejs.org/en/download/current/) v10.14+
-* ##### [Git](https://git-scm.com/downloads)
-
 ### Build & run locally
 
 ```sh
@@ -14,6 +10,9 @@ $ cd ./realm-idler/
 $ npm install
 $ npm start
 ```
+
+### How to Play 
+After downloading & running the game, you will be asked to input a character name. Currently, all connected clients share the same database collection, and any client can load any character. Choose a name and click start. 
 
 ### Building & Compiling
 
