@@ -43,7 +43,7 @@ class Main {
         })
         // event.sender.send('createdchar', character)
       } else {
-        DPlayer.updateOne({ name: name }, { $inc: { turns: 1 } }).then(function () { return console.log(doc.name + ' new turn +1') })
+        DPlayer.updateOne({ name: name }, { $inc: { turns: 1 } }).then(function () { return })
       }
     })
   }

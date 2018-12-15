@@ -1,7 +1,7 @@
 {
   "name": "realmidler",
   "version": "1.0.0",
-  "description": "A rotmg app written with Typescript",
+  "description": "A rotmg idle app written with Typescript",
   "scripts": {
     "test": "mocha",
     "watch": "tsc -w",
@@ -39,7 +39,6 @@
   "dependencies": {
     "electron": "^2.0.2",
     "typescript": "^2.9.2",
-    "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "mongodb": "^3.1.10",
     "mongoose": "^5.3.15",

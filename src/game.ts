@@ -21,7 +21,6 @@ export class Game {
     public roll: number;
     private atkUpgrade: HTMLElement;
     constructor(name: string, speed: number) {
-
         (document.getElementsByClassName('atk__upgrade')[0] as HTMLElement).addEventListener('click', function() { return new Upgrade().upgrade_atk(name) });
         (document.getElementsByClassName('def__upgrade')[0] as HTMLElement).addEventListener('click', function() { return new Upgrade().upgrade_def(name) });
         (document.getElementsByClassName('spd__upgrade')[0] as HTMLElement).addEventListener('click', function() { return new Upgrade().upgrade_spd(name) });
@@ -491,8 +490,5 @@ class UpdateWindow extends events.EventEmitter implements IMyEvent {
             this.dex.style.color = `#FFFF00`;
             this.dex.innerHTML = `${char.dex}`;
         }
-
-
     }
-
 }
